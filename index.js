@@ -9,6 +9,9 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Hello Dhruva");
 });
+app.get("/hello", (req, res) => {
+  res.send("Hello Dhruva");
+});
 app.post("/data", (req, res) => {
   const data = req.body;
   console.log("Received data:", data);
