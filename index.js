@@ -17,6 +17,7 @@ app.get("/hello", (req, res) => {
   res.send("Hello 12305846");
 });
 
+console.log("first")
 app.post("/data", (req, res) => {
   const data = req.body;
   console.log("Received data:", data);
