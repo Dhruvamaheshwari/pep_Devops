@@ -12,6 +12,11 @@ app.get("/", (req, res) => {
 app.get("/hello", (req, res) => {
   res.send("Hello Dhruva");
 });
+
+app.get("/hello", (req, res) => {
+  res.send("Hello 12305846");
+});
+
 app.post("/data", (req, res) => {
   const data = req.body;
   console.log("Received data:", data);
