@@ -7,22 +7,13 @@ const port = 3000;
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Hello Dhruva");
-});
-app.get("/hello", (req, res) => {
-  res.send("Hello Dhruva");
+  res.send("Dhruva Maheshwari");
 });
 
-app.get("/hello", (req, res) => {
-  res.send("Hello 12305846");
-});
 
-console.log("first")
-app.post("/data", (req, res) => {
-  const data = req.body;
-  console.log("Received data:", data);
-  res.send("Data received successfully!");
-});
+
+
+module.exports = app;
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
